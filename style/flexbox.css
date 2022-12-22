@@ -1,0 +1,9 @@
+.fcontainer{
+    display: flex;
+    margin: 40px;
+    padding: 20px;
+}
+
+.product{
+    font-style: none;
+}

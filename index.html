@@ -4,9 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" type ="text/css" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/nav.css">
+    <link rel="stylesheet" href="style/hero.css">
+    <link rel="stylesheet" href="style/features.css">
+    <link rel="stylesheet" href="style/flexbox.css">
+    <link rel="stylesheet" href="style/media-queries.css">
+    <link rel = "stylesheet" href="style/footer.css">
 </head>
+
 <body>
     <div class id="page-wrapper">
         <header id="header">
@@ -14,20 +22,21 @@
                 <img     id="header-img" 
                         src= "IMG/product-landing-page-logo.png"
                         alt="original trombones logo">
-                <nav id ="nav-bar">
-                    <ul>
-                        <li>
-                            <a class="nav-link" href="#features">Features</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#how-it-works">How it works</a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-                    </ul>
-                </nav>
             </div>
+            <nav id ="nav-bar">
+                <ul>
+                    <li>
+                        <a class="nav-link" href="#features">Features</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#how-it-works">How it works</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#pricing">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            
         </header>
         <section id ="hero">
             <h2>Handcreafted, home-made masterpieces</h2>
@@ -84,7 +93,7 @@
 
                 </iframe>
             </section>
-            <section id="pricing">
+            <div class="fcontainer">
                 <div class="product" id="tenor">
                     <div class="level">Tenor Trombone</div>
                     <h2>$600</h2>
@@ -118,7 +127,7 @@
                     </ol>
                     <button class="btn">Select</button>
                 </div>
-            </section>
+            </div>
             <footer>
                 <ul>
                     <li><a href="#">Privacy</a></li>
@@ -131,3 +140,81 @@
     </div>
 </body>
 </html>
+
+<!--Following code has been replaced with FlexBOX
+ORIGINAL
+<section id="pricing">
+    <div class="product" id="tenor">
+        <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+    <div class="product" id="bass">
+        <div class="level">Base Trombone</div>
+        <h2>$900</h2>
+        <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+    <div class="product" id="valve">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Juzz Band</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+</section>
+
+
+REPLACED WITH FLEX BOX
+<div class = "fcontainer">
+    <div class="product" id="tenor">
+        <div class="level">Tenor Trombone</div>
+        <h2>$600</h2>
+        <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+    <div class="product" id="bass">
+        <div class="level">Base Trombone</div>
+        <h2>$900</h2>
+        <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+    <div class="product" id="valve">
+        <div class="level">Valve Trombone</div>
+        <h2>$1200</h2>
+        <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Juzz Band</li>
+            <li>Lorem ipsum dollar.</li>
+            <li>Lorem ipsum.</li>
+        </ol>
+        <button class="btn">Select</button>
+    </div>
+</div>
+
+-->   
